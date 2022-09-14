@@ -1,5 +1,7 @@
 <?php
 
+error_reporting (E_PARSE);
+
 ob_start();
 
 $str = file_get_contents('https://enka.network/u/'.$_GET['uid']);
