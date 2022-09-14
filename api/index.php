@@ -1,9 +1,8 @@
 <?php
 
-$str = file_get_contents('https://enka.network/u/'.$_GET['uid']);
-$str2 = '<img src="/ui/UI_AvatarIcon_Klee.png" alt="" class="svelte-qvi7br">';
+ob_start();
 
-$str1 = 'http://baidu.com';
+$str = file_get_contents('https://enka.network/u/'.$_GET['uid']);
 
 $pattern = '/\/ui\/.*\.png/';//需要转义/
 
