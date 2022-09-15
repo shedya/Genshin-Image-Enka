@@ -11,7 +11,10 @@ $pattern = '/\/ui\/.*\.png/';//需要转义/
 preg_match($pattern,$str,$match);
 
 $a1 = $match[0];
-$a2 = 'https://enka.network'.$a1;
-echo $a2;
+$a2 = str_replace('/ui/','',$a1);
+$a3 = 'https://upload-bbs.mihoyo.com/game_record/genshin/character_side_icon/'.$a2;
+$a3 = str_replace('/ui/','',$a2);
 
-header("Location: https://enka.network".$a1);
+echo $a3;
+
+header("Location: $a3);
