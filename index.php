@@ -16,4 +16,4 @@ $a3 = 'https://upload-bbs.mihoyo.com/game_record/genshin/character_side_icon/'.$
 
 echo $a3;
 
-header("Location: $a3);
+header("Location: ".$a3);
